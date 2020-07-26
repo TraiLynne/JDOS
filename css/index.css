@@ -1,0 +1,240 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+body {
+  font-family: 'Lato', sans-serif;
+}
+body main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+header {
+  background-color: white;
+}
+header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+@media (min-width: 500px) {
+  header nav {
+    flex-direction: column;
+  }
+}
+header nav .navbar-brand img {
+  max-width: 175px;
+}
+footer {
+  background-color: #35383c;
+  color: #ebebeb;
+  text-align: center;
+  width: 100%;
+}
+@media (min-width: 500px) {
+}
+footer .footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: center;
+}
+@media (min-width: 500px) {
+  footer .footer-container {
+    flex-direction: row;
+  }
+}
+footer .footer-container div {
+  width: 100%;
+  padding-bottom: 20px;
+}
+@media (min-width: 500px) {
+  footer .footer-container div {
+    width: 20%;
+  }
+}
+footer .footer-container div h3 {
+  font-weight: bold;
+  padding: 20px;
+  text-transform: uppercase;
+}
+footer .footer-container div p {
+  line-height: 1.5em;
+}
+#home {
+  background-color: #0a2a45;
+  background-image: url(../img/house-wire-model-fade-white-1500x1085.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: auto;
+}
+#home #cta article {
+  max-width: 1200px;
+  color: #ebebeb;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+@media (min-width: 500px) {
+  #home #cta article {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: center;
+  }
+}
+#home #cta article p {
+  width: 100%;
+  font-size: 2em;
+}
+@media (min-width: 500px) {
+  #home #cta article p {
+    width: 75%;
+  }
+}
+@media (min-width: 500px) {
+  #home #cta article a {
+    align-self: center;
+  }
+}
+#home main {
+  width: 100%;
+  margin: 0;
+  margin-left: 0;
+  margin-right: 0;
+  background-color: white;
+}
+#home main section {
+  max-width: 1200px;
+}

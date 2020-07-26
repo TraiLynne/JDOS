@@ -1,0 +1,50 @@
+#home {
+    background-color: #0a2a45;
+    background-image: url(../img/house-wire-model-fade-white-1500x1085.png);
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    background-position: center;
+    background-size: auto;
+
+    #cta {
+        article {
+            max-width: 1200px;
+            color: @lightFontColor;
+            margin: 0 auto;
+
+            padding: 50px 0;
+
+            @media @tablet {
+                .flexBox(row, nowrap, space-between, center)
+            }
+
+            p {
+                width: 100%;
+                font-size: 2em;
+
+                @media @tablet {
+                    width: 75%;
+                }
+            }
+
+            a {
+
+                @media @tablet {
+                    align-self: center;
+                }
+            }
+        }
+    }
+
+    main {
+        width: 100%;
+        margin: 0;
+        margin-left: 0;
+        margin-right: 0;
+        background-color: white;
+
+        section {
+            max-width: 1200px;
+        }
+    }
+}

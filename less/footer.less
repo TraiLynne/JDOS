@@ -1,0 +1,42 @@
+footer {
+    background-color: @footerColor;
+    color: @lightFontColor;
+    text-align: center;
+    width: 100%;
+
+    @media @tablet {
+        // text-align: left;
+    }
+
+    .footer-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 50px 0;
+
+        .flexBox(column, wrap, space-around, center);
+
+        @media @tablet{
+            flex-direction: row;
+        }
+
+        div {
+            width: 100%;
+            padding-bottom: 20px;
+
+            @media @tablet {
+                width: 20%;
+            }
+
+            h3 {
+                font-weight: bold;
+                padding: 20px;
+                text-transform: uppercase;
+            }
+
+            p {
+                line-height: 1.5em;;
+            }
+        }
+    } 
+    
+}

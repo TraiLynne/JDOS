@@ -1,0 +1,19 @@
+header {
+    background-color: white;
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin: 0 auto;
+
+        @media @tablet {
+            flex-direction: column;
+        }
+
+        .navbar-brand img {
+            max-width: 175px;
+        }
+    }
+}
