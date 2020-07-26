@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../../JDOSInternational"
+		},
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "JDOS"
+	}
+}
