@@ -48,9 +48,6 @@ center,
 dl,
 dt,
 dd,
-ol,
-ul,
-li,
 fieldset,
 form,
 label,
@@ -106,10 +103,6 @@ section {
 }
 body {
   line-height: 1;
-}
-ol,
-ul {
-  list-style: none;
 }
 blockquote,
 q {
@@ -305,6 +298,174 @@ header nav .navbar-brand img {
 }
 @media (min-width: 500px) {
   #home main #partners div img {
+    width: 24%;
+  }
+}
+#about {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-content: center;
+}
+#about #hero {
+  width: 100%;
+}
+#about #hero img {
+  width: 100%;
+}
+#about main {
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-content: center;
+  line-height: 1.5em;
+}
+@media (min-width: 500px) {
+  #about main {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+#about main article#history {
+  width: 94%;
+  margin: 0 auto;
+  order: 0;
+  padding-top: 20px;
+}
+@media (min-width: 500px) {
+  #about main article#history {
+    order: 0;
+    width: 65%;
+    margin: 0;
+  }
+}
+#about main article#history h2 {
+  font-size: 1.5em;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 20px;
+}
+@media (min-width: 500px) {
+  #about main article#history h2 {
+    font-size: 2em;
+  }
+}
+#about main article#history p {
+  line-height: 1.5em;
+}
+#about main article#history ul {
+  padding-top: 5%;
+}
+#about main article#values {
+  width: 94%;
+  margin: 0 auto;
+  order: 1;
+  padding-top: 20px;
+}
+@media (min-width: 500px) {
+  #about main article#values {
+    order: 2;
+  }
+}
+#about main article#values h2 {
+  font-size: 1.5em;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 20px;
+}
+@media (min-width: 500px) {
+  #about main article#values h2 {
+    font-size: 2em;
+  }
+}
+#about main article#values p {
+  line-height: 1.5em;
+}
+#about main article#values p span {
+  font-weight: bold;
+}
+#about main aside {
+  width: 90%;
+  margin: 0 auto;
+  order: 2;
+  padding-top: 20px;
+}
+@media (min-width: 500px) {
+  #about main aside {
+    order: 1;
+    width: 25%;
+  }
+}
+#about main aside a {
+  padding: 20px;
+}
+#about main aside a .card {
+  width: 100%;
+  margin: 20px 0;
+}
+#about main aside a .card:hover {
+  background-color: black;
+}
+#about main aside a .card .card-img {
+  height: 100%;
+}
+#about main aside a .card .card-img-overlay {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-content: center;
+}
+#about main aside a .card .card-img-overlay h5 {
+  align-self: center;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+#about main #partners {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 0 50px;
+  order: 3;
+  padding-top: 20px;
+}
+@media (min-width: 500px) {
+  #about main #partners {
+    order: 3;
+  }
+}
+#about main #partners h2 {
+  font-size: 1.5em;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 20px;
+}
+@media (min-width: 500px) {
+  #about main #partners h2 {
+    font-size: 2em;
+  }
+}
+#about main #partners div {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-content: center;
+}
+@media (min-width: 500px) {
+  #about main #partners div {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+#about main #partners div img {
+  width: 100%;
+}
+@media (min-width: 500px) {
+  #about main #partners div img {
     width: 24%;
   }
 }
