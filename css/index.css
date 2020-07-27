@@ -469,6 +469,150 @@ header nav .navbar-brand img {
     width: 24%;
   }
 }
+#career main {
+  max-width: 1200px;
+  width: 94%;
+  margin: 0 auto;
+  line-height: 1.5em;
+  min-height: 70vh;
+}
+#career main h2 {
+  font-size: 1.5em;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 20px;
+}
+@media (min-width: 500px) {
+  #career main h2 {
+    font-size: 2em;
+  }
+}
+#career main p {
+  color: #b0b0b0;
+  padding-bottom: 20px;
+  text-align: center;
+}
+#contact main {
+  max-width: 1200px;
+  width: 94%;
+  margin: 0 auto;
+}
+@media (min-width: 500px) {
+  #contact main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: center;
+  }
+}
+#contact main section {
+  width: 94%;
+  margin: 0 auto;
+}
+@media (min-width: 500px) {
+  #contact main section {
+    width: 70%;
+  }
+}
+#contact main section h2 {
+  font-size: 1.5em;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+@media (min-width: 500px) {
+  #contact main section h2 {
+    font-size: 2em;
+  }
+}
+#contact main section form {
+  width: 94%;
+  margin: 0 auto 20px;
+  text-align: center;
+}
+@media (min-width: 500px) {
+  #contact main section form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+  }
+}
+#contact main section form .name {
+  width: 100%;
+  margin-bottom: 10px;
+  height: 40px;
+  border: 4px dashed #0a2a45;
+  padding-left: 10px;
+}
+@media (min-width: 500px) {
+  #contact main section form .name {
+    width: 47%;
+  }
+}
+#contact main section form .contact {
+  width: 100%;
+  margin-bottom: 10px;
+  height: 40px;
+  border: 4px dashed #0a2a45;
+  padding-left: 10px;
+}
+@media (min-width: 500px) {
+  #contact main section form .contact {
+    width: 47%;
+  }
+}
+#contact main section form .message {
+  width: 100%;
+  height: 240px;
+  margin-bottom: 10px;
+  border: 4px dashed #0a2a45;
+  padding-left: 10px;
+}
+#contact main section form .submit {
+  width: 50%;
+  margin: 0 auto;
+  height: 40px;
+  border: 4px solid #0a2a45;
+  background-color: transparent;
+  color: #0a2a45;
+  box-shadow: 5px 10px #b0b0b0;
+}
+#contact main aside {
+  margin: 0 auto 50px;
+}
+@media (min-width: 500px) {
+  #contact main aside {
+    width: 25%;
+  }
+}
+#contact main aside h2 {
+  font-size: 1.5em;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 20px;
+}
+#contact main aside div {
+  width: 100%;
+  text-align: center;
+}
+@media (min-width: 500px) {
+  #contact main aside div {
+    text-align: left;
+  }
+}
+#contact main aside div h3 {
+  font-weight: bold;
+  line-height: 1.5em;
+  font-size: 1.25em;
+  padding-top: 10px;
+}
+#contact main aside div p {
+  line-height: 1.5em;
+}
 footer {
   background-color: #35383c;
   color: #ebebeb;

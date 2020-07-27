@@ -1,0 +1,120 @@
+#contact {
+
+    main {
+        max-width: 1200px;
+        width: 94%;
+        margin: 0 auto;
+
+        @media @tablet {
+            .flexBox(row, nowrap, space-between, center)
+        }
+
+        section {
+            width: 94%;
+            margin: 0 auto;
+
+            @media @tablet {
+                width: 70%;
+            }
+
+            h2 {
+                font-size: 1.5em;
+                text-transform: uppercase;
+                text-align: center;
+                padding: 20px;
+                margin-bottom: 10px;
+
+                @media @tablet {
+                    font-size: 2em;
+                }
+            }
+
+            form {
+                width: 94%;
+                margin: 0 auto 20px;
+                text-align: center;
+
+                @media @tablet {
+                    .flexBox(row, wrap, space-between, center);
+                }
+
+                .name {
+                    width: 100%;
+                    margin-bottom: 10px;
+                    height: 40px;
+                    border: 4px dashed @blueBackground;
+                    padding-left: 10px;
+
+                    @media @tablet {
+                        width: 47%;
+                    }
+                }
+
+                .contact {
+                    width: 100%;
+                    margin-bottom: 10px;
+                    height: 40px;
+                    border: 4px dashed @blueBackground;
+                    padding-left: 10px;
+
+                    @media @tablet {
+                        width: 47%;
+                    }
+                }
+
+                .message {
+                    width: 100%;
+                    height: 240px;
+                    margin-bottom: 10px;
+                    border: 4px dashed @blueBackground;
+                    padding-left: 10px;
+                }
+
+                .submit {
+                    width: 50%;
+                    margin: 0 auto;
+                    height: 40px;
+                    border: 4px solid @blueBackground;
+                    background-color: transparent;
+                    color: @blueBackground;
+                    box-shadow: 5px 10px @mediumFontColor;
+                }
+            }
+        }
+
+        aside {
+            margin: 0 auto 50px;
+
+            @media @tablet {
+                width: 25%;
+            }
+
+            h2 {
+                font-size: 1.5em;
+                text-transform: uppercase;
+                text-align: center;
+                padding: 20px;
+            }
+
+            div {
+                width: 100%;
+                text-align: center;
+
+                @media @tablet {
+                    text-align: left;
+                }
+
+                h3 {
+                    font-weight: bold;
+                    line-height: 1.5em;
+                    font-size: 1.25em;
+                    padding-top: 10px;
+                }
+
+                p {
+                    line-height: 1.5em;
+                }
+            }
+        }
+    }
+}
