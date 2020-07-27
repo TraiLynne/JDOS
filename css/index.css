@@ -130,7 +130,6 @@ body {
   font-family: 'Lato', sans-serif;
 }
 body main {
-  max-width: 1200px;
   margin: 0 auto;
 }
 header {
@@ -150,6 +149,164 @@ header nav {
 }
 header nav .navbar-brand img {
   max-width: 175px;
+}
+#home {
+  background-color: #0a2a45;
+  background-image: url(../img/house-wire-model-fade-white-1500x1085.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: auto;
+}
+#home #cta article {
+  max-width: 1200px;
+  color: #ebebeb;
+  margin: 0 auto;
+  text-align: center;
+  padding: 50px 25px;
+}
+@media (min-width: 500px) {
+  #home #cta article {
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: center;
+  }
+}
+#home #cta article p {
+  width: 100%;
+  font-size: 2em;
+  margin-bottom: 25px;
+}
+@media (min-width: 500px) {
+  #home #cta article p {
+    width: 75%;
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 500px) {
+  #home #cta article a {
+    align-self: center;
+  }
+}
+#home main {
+  width: 100%;
+  background-color: white;
+}
+#home main #services {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 25px 0;
+}
+@media (min-width: 500px) {
+  #home main #services {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-content: center;
+  }
+}
+#home main #services h2 {
+  font-size: 1.5em;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 20px;
+}
+@media (min-width: 500px) {
+  #home main #services h2 {
+    font-size: 2em;
+  }
+}
+#home main #services p {
+  color: #b0b0b0;
+  padding-bottom: 20px;
+  text-align: center;
+}
+#home main #services #service-container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-content: center;
+}
+@media (min-width: 500px) {
+  #home main #services #service-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+#home main #services #service-container .card {
+  width: 100%;
+  margin: 20px 0;
+}
+#home main #services #service-container .card:hover {
+  background-color: black;
+}
+@media (min-width: 500px) {
+  #home main #services #service-container .card {
+    width: 45%;
+    margin: 20px;
+  }
+}
+#home main #services #service-container .card .card-img {
+  height: 100%;
+}
+#home main #services #service-container .card .card-img:hover {
+  display: contents;
+}
+#home main #services #service-container .card .card-img-overlay {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-content: center;
+}
+#home main #services #service-container .card .card-img-overlay h5 {
+  align-self: center;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+#home main #partners {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 0 50px;
+}
+#home main #partners h2 {
+  font-size: 1.5em;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 20px;
+}
+@media (min-width: 500px) {
+  #home main #partners h2 {
+    font-size: 2em;
+  }
+}
+#home main #partners div {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-content: center;
+}
+@media (min-width: 500px) {
+  #home main #partners div {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+#home main #partners div img {
+  width: 100%;
+}
+@media (min-width: 500px) {
+  #home main #partners div img {
+    width: 24%;
+  }
 }
 footer {
   background-color: #35383c;
@@ -190,51 +347,4 @@ footer .footer-container div h3 {
 }
 footer .footer-container div p {
   line-height: 1.5em;
-}
-#home {
-  background-color: #0a2a45;
-  background-image: url(../img/house-wire-model-fade-white-1500x1085.png);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  background-size: auto;
-}
-#home #cta article {
-  max-width: 1200px;
-  color: #ebebeb;
-  margin: 0 auto;
-  padding: 50px 0;
-}
-@media (min-width: 500px) {
-  #home #cta article {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-content: center;
-  }
-}
-#home #cta article p {
-  width: 100%;
-  font-size: 2em;
-}
-@media (min-width: 500px) {
-  #home #cta article p {
-    width: 75%;
-  }
-}
-@media (min-width: 500px) {
-  #home #cta article a {
-    align-self: center;
-  }
-}
-#home main {
-  width: 100%;
-  margin: 0;
-  margin-left: 0;
-  margin-right: 0;
-  background-color: white;
-}
-#home main section {
-  max-width: 1200px;
 }

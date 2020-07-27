@@ -11,19 +11,23 @@
             max-width: 1200px;
             color: @lightFontColor;
             margin: 0 auto;
+            text-align: center;
 
-            padding: 50px 0;
+            padding: 50px 25px;
 
             @media @tablet {
+                text-align: left;
                 .flexBox(row, nowrap, space-between, center)
             }
 
             p {
                 width: 100%;
                 font-size: 2em;
+                margin-bottom: 25px;
 
                 @media @tablet {
                     width: 75%;
+                    margin-bottom: 0;
                 }
             }
 
@@ -38,13 +42,110 @@
 
     main {
         width: 100%;
-        margin: 0;
-        margin-left: 0;
-        margin-right: 0;
         background-color: white;
 
-        section {
+        #services {
             max-width: 1200px;
+            margin: 0 auto;
+            padding: 25px 0;
+
+            @media @tablet {
+                .flexBox(column, nowrap, space-around, center)
+            }
+
+            h2 {
+                font-size: 1.5em;
+                text-transform: uppercase;
+                text-align: center;
+                padding: 20px;
+
+                @media @tablet {
+                    font-size: 2em;
+                }
+            }
+
+            p {
+                color: @mediumFontColor;
+                padding-bottom: 20px;
+                text-align: center;
+            }
+
+            #service-container {
+                width: 90%;
+                margin: 0 auto;
+                .flexBox(column, nowrap, space-between, center);
+
+                @media @tablet {
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                }
+
+                .card {
+                    width: 100%;
+                    margin: 20px 0;
+
+                    &:hover {
+                        background-color: black;
+                    }
+
+                    @media @tablet {
+                        width: 45%;
+                        margin: 20px;
+                    }
+
+                    .card-img {
+                        height: 100%;
+
+                        &:hover {
+                            display: contents;
+                          }
+                    }
+
+                    .card-img-overlay {
+                        .flexBox(row, nowrap, space-around, center);
+
+                        h5 {
+                            align-self: center;
+                            font-size: 1.5em;
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+        }
+
+        #partners {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 0 50px;
+
+            h2 {
+                font-size: 1.5em;
+                text-transform: uppercase;
+                text-align: center;
+                padding: 20px;
+
+                @media @tablet {
+                    font-size: 2em;
+                }
+            }
+
+            div {
+                .flexBox(column, nowrap, space-around, center);
+
+                @media @tablet {
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                }
+
+                img {
+                    width: 100%;
+
+                    @media @tablet {
+                        width: 24%;
+                    }
+                }
+            }
         }
     }
 }
