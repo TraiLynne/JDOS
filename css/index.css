@@ -127,6 +127,7 @@ body main {
 }
 header {
   background-color: white;
+  border-bottom: 1px solid #b0b0b0;
 }
 header nav {
   display: flex;
@@ -468,6 +469,176 @@ header nav .navbar-brand img {
   #about main #partners div img {
     width: 24%;
   }
+}
+#services main {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-content: center;
+  line-height: 1.5em;
+}
+#services main aside {
+  display: none;
+  width: 25%;
+  border-right: 1px solid #b0b0b0;
+  text-align: right;
+}
+#services main aside #sub-nav {
+  border-bottom: 1px solid #b0b0b0;
+  padding-bottom: 20px;
+}
+#services main aside #sub-nav p {
+  cursor: pointer;
+  padding-right: 10px;
+}
+#services main aside #sub-nav p:hover {
+  color: gold;
+}
+#services main aside #info {
+  border-bottom: 1px solid #b0b0b0;
+  padding-bottom: 20px;
+}
+#services main aside #info p {
+  padding-right: 10px;
+}
+#services main aside #map {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-content: flex-end;
+}
+#services main aside #map iframe {
+  width: 250px;
+  height: 250px;
+  margin-top: 10px;
+  margin-right: 10px;
+  align-self: flex-end;
+}
+#services main aside h3 {
+  font-size: 1.3em;
+  text-transform: uppercase;
+  padding: 10px;
+  border-bottom: 1px solid #b0b0b0;
+  display: block;
+}
+#services main aside p {
+  margin-top: 20px;
+  padding-right: 20px;
+}
+#services main aside p span {
+  font-size: 1.25em;
+  font-weight: bold;
+}
+@media (min-width: 500px) {
+  #services main aside {
+    display: initial;
+  }
+}
+#services main section {
+  width: 94%;
+  margin: 0 auto;
+  text-align: center;
+}
+@media (min-width: 500px) {
+  #services main section {
+    width: 70%;
+  }
+}
+#services main section h2 {
+  font-size: 1.5em;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 20px;
+}
+@media (min-width: 500px) {
+  #services main section h2 {
+    font-size: 2em;
+  }
+}
+#services main section p {
+  color: #b0b0b0;
+}
+#services main section #service-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-content: center;
+  width: 94%;
+  margin: 50px auto;
+}
+@media (min-width: 500px) {
+  #services main section #service-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+  }
+}
+#services main section #service-container .service {
+  width: 100%;
+  margin-bottom: 20px;
+}
+#services main section #service-container .service:hover h3 {
+  color: gold;
+}
+@media (min-width: 500px) {
+  #services main section #service-container .service {
+    width: 45%;
+  }
+}
+#services main section #service-container .service .service-access h3 {
+  font-size: 1.25em;
+  text-align: left;
+  margin-bottom: 10px;
+  padding: 10px;
+  text-transform: center;
+  height: 75px;
+}
+@media (min-width: 500px) {
+  #services main section #service-container .service .service-access h3 {
+    font-size: 1.25em;
+  }
+}
+#services main section #service-container .service .modal {
+  text-align: left;
+}
+#services main section #service-container .service .modal .modal-content .modal-header {
+  background-color: #0a2a45;
+  color: #ebebeb;
+}
+#services main section #service-container .service .modal .modal-content .modal-header button {
+  color: #ebebeb;
+}
+#services main section #service-container .service .modal .modal-content .modal-body article h2 {
+  line-height: 1.5em;
+}
+#services main section #service-container .service .modal .modal-content .modal-body article p {
+  margin: 10px 0;
+}
+#services main section #service-container .service .modal .modal-content .modal-body article .special {
+  line-height: 2em;
+}
+#services main section #service-container .service .modal .modal-content .modal-body article.outset {
+  border: 1px solid #0a2a45;
+  background-color: #b0b0b0;
+  width: 94%;
+  margin: 20px auto;
+}
+#services main section #service-container .service .modal .modal-content .modal-body article.outset p {
+  color: black;
+}
+#services main section #service-container .service .modal .modal-content .modal-body article.outset p span {
+  font-weight: bold;
+  color: gold;
+}
+#services main section #service-container .service .modal .modal-content .modal-footer {
+  background-color: #0a2a45;
 }
 #career main {
   max-width: 1200px;

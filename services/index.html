@@ -20,10 +20,12 @@
     <link rel="stylesheet" href="../css/normalize.css" />
     <link rel="stylesheet" href="../css/index.css" />
 
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=MuseoModerno&display=swap" rel="stylesheet">
+
     <meta name="theme-color" content="#fafafa" />
 </head>
 
-<body>
+<body id='services'>
     <!-- Add your site or application content here -->
     <header>
         <nav class="navbar navbar-expand-lg navbar-light">
@@ -48,18 +50,6 @@
                         <a class="nav-link" href="#">Services<span class="sr-only">(current)</span></a>
                     </li>
 
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Construction Management</a>
-                            <a class="dropdown-item" href="#">Facilities Maintenance & Management</a>
-                            <a class="dropdown-item" href="#">Program & Project Management</a>
-                            <a class="dropdown-item" href="#">Engineering Admin Support Services</a>
-                        </div>
-                    </li>
-
                     <li class="nav-item">
                         <a class="nav-link" href="../projects/">Projects</a>
                     </li>
@@ -75,16 +65,14 @@
 
     <main>
         <aside>
-            <div>
-                <ul>
-                    <li data-toggle="modal" data-target="#construction">Construction Management</li>
-                    <li data-toggle="modal" data-target="#engineering">Engineering Admin Support Services</li>
-                    <li data-toggle="modal" data-target="#facilities">Facilities Maintenance & Management</li>
-                    <li data-toggle="modal" data-target="#progamProject">Program & Project Management</li>
-                </ul>
+            <div id='sub-nav'>
+                <p data-toggle="modal" data-target="#construction">Construction Management</p>
+                <p data-toggle="modal" data-target="#engineering">Engineering Admin Support Services</p>
+                <p data-toggle="modal" data-target="#facilities">Facilities Maintenance & Management</p>
+                <p data-toggle="modal" data-target="#progamProject">Program & Project Management</p>
             </div>
 
-            <div>
+            <div id='info'>
                 <h3>Office</h3>
 
                 <p>
@@ -94,7 +82,7 @@
                 </p>
 
                 <p>
-                    <span>Contact</span>
+                    <span>Contact</span><br/>
                     <a href='mailto:jdos@jdosinternational.com'>jdos@jdosinternational.com</a><br/>
                     Tel: 202 726 8650
                 </p>
@@ -106,203 +94,227 @@
                     Su: Closed
                 </p>
             </div>
+            <div id='map'>
+                <h3>Route</h3>
+
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3103.061184676909!2d-77.03517918490648!3d38.94543057956328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c81566a168cd%3A0x874e263a7f5df1e1!2s4506%2014th%20St%20NW%2C%20Washington%2C%20DC%2020011!5e0!3m2!1sen!2sus!4v1596061555027!5m2!1sen!2sus"  frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
         </aside>
         
         <section>
-            <div>
                 <h2>Our Services</h2>
                 <p>
                     J-Dos tailors it’s services to meet the needs of each client group to ensure consistent, superior services at the local level. For more than 22 years, J-Dos has provided complete civil infrastructure and facilities management, as well as other engineering support services for both public and private clients.
                 </p>
-            </div>
 
-            <div>
-                <div data-toggle="modal" data-target="#construction">
-                    <h3>Construction Management</h3>
-                    <img src='../img/services/ConstructionManagement.jpg'/>
-                </div>
-                <div class="modal fade modal-dialog modal-dialog-scrollable" id='construction'>
-                    <div class="modal-dialog">
+            <div id='service-container'>
+                <div class='service'>
+                    <!-- Button trigger modal -->
+                    <div class='service-access' data-toggle="modal" data-target="#construction">
+                        <h3>Construction Management</h3>
+                        <img src='../img/services/ConstructionManagement.jpg'/>
+                    </div>
+                    
+                    <!-- Modal -->
+                    <div class="modal fade" id="construction" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
                         <div class="modal-content">
-                          <div class="modal-header">
-                            <h5 class="modal-title" id="staticBackdropLabel">Construction Management</h5>
+                            <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Construction Management</h5>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                              <span aria-hidden="true">&times;</span>
+                                <span aria-hidden="true">&times;</span>
                             </button>
-                          </div>
-                          <div class="modal-body">
-                              <article>
-                                <h2>Construction Management</h2>
-                                <p>
-                                    J-Dos manages projects from initial planning through to occupancy and operation. We use state-of –the-art technology, technical expertise and skilled management to deliver projects that meet the client’s goals and objectives on each project. We understand that projects today are more technical, and clients are demanding higher quality with tighter budgets for shorter time frames. We can meet those challenges. We have a proven history of successfully meeting the demands of this growing and ever changing industry for both new construction and renovation. Construction projects demand big-picture ideas and attention to details. We plan, coordinate, budget, and supervise all construction projects with the specific needs and goals of our clients at the forefront.
-                                </p>
-                              </article>
-
-                              <article>
-                                <h2>What Makes Us Unique</h2>
-                                <p>
-                                    J-Dos applies the combined experiences of our staff in project planning, design management, construction management and inspection, commissioning and occupancy planning for sizable rehabilitation and renovations, new construction, and projects involving historic preservation to optimize time, cost and quality to our clients’ specific needs.
-                                </p>
-
-                                <p>
-                                    Our engineers maintain active professional licenses in the District of Columbia, Maryland, North Carolina, New York, Texas, and Virginia. Our construction inspectors possess the required certifications recognized by multiple State and Local agencies.
-                                </p>
-                              </article>
-
-                              <article>
-                                <p>
-                                    Each Project Team consists of the most capable and experienced individuals reporting to the Construction Manager who is responsible to the client’s management representative on the project.  Staff members of the J-Dos team have managed and inspected design and construction projects exceeding <span>$1 billion</span>.  The experience of our construction management staff includes the full gamut of pavement restoration, roadway reconstruction, streetscaping, and bridge rehabilitation projects. Our professionals have managed and inspected projects ranging from minor improvements projects to complex infrastructure development programs.
-
-
-                                </p>
-                              </article>
-                          </div>
-                          <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Understood</button>
-                          </div>
-                        </div>
-                      </div>
-                </div>
+                            </div>
+                            <div class="modal-body">
+                                <article>
+                                    <h2>Construction Management</h2>
+                                    <p>
+                                        J-Dos manages projects from initial planning through to occupancy and operation. We use state-of –the-art technology, technical expertise and skilled management to deliver projects that meet the client’s goals and objectives on each project. We understand that projects today are more technical, and clients are demanding higher quality with tighter budgets for shorter time frames. We can meet those challenges. We have a proven history of successfully meeting the demands of this growing and ever changing industry for both new construction and renovation. Construction projects demand big-picture ideas and attention to details. We plan, coordinate, budget, and supervise all construction projects with the specific needs and goals of our clients at the forefront.
+                                    </p>
+                                  </article>
     
-                <div data-toggle="modal" data-target="#engineering">
-                    <h3>Engineering Admin Support Services</h3>
-                    <img src='../img/services/JDos-Cape-05-2014--300x200.jpg'/>
-                </div>
-                <div class="modal fade modal-dialog modal-dialog-scrollable" id='engineering'>
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <h5 class="modal-title" id="staticBackdropLabel">Engineering Admin Support Services</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                              <span aria-hidden="true">&times;</span>
-                            </button>
-                          </div>
-                          <div class="modal-body">
-                            <article>
-                                <h2>Engineering Admin Support Services</h2>
-                                <p>
-                                    J-Dos offers a range of administration support services, all tailored to meet the needs of each client and goal. Whether we are designing comprehensive program schemes or providing interim support, J-Dos works diligently as an integrated team to deliver projects on time and within budget. We combine the knowledge and skills of our staff with strong and innovative project management leadership in order to plan, implement, control and monitor all projects. Our rigorous quality assurance methodologies are developed to ensure our services are complete and consistent without clients’ goals.
-                                </p>
-                            </article>
-
-                            <article>
-                                <h2>What We Offer</h2>
-                                <p>
-                                    J-Dos offers solutions for short and long-term project support challenges. These services include public outreach, data collection and processing, and administrative assistance. By offering these services, our clients and able to focus on their core competencies and maximize productivity.
-                                </p>
-                            </article>
-
-                            <article>
-                                <p>
-                                    J-Dos was a member of the Project Management (PM) Team responsible for management of the design and construction of a new Frederick Douglas Memorial Bridge, a new interchange at Suitland Parkway/ 1-295, reconstruction of the corridor, a new South Capitol St/ M Street intersection and other related work.
-                                </p>
-                            </article>
-                          </div>
-                          <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Understood</button>
-                          </div>
-                        </div>
-                      </div>
-                </div>
+                                  <article>
+                                    <h2>What Makes Us Unique</h2>
+                                    <p>
+                                        J-Dos applies the combined experiences of our staff in project planning, design management, construction management and inspection, commissioning and occupancy planning for sizable rehabilitation and renovations, new construction, and projects involving historic preservation to optimize time, cost and quality to our clients’ specific needs.
+                                    </p>
     
-                <div data-toggle="modal" data-target="#facilities">
-                    <h3>Facilities Maintenance and Management</h3>
-                    <img src='../img/services/facilities-3-300x220.jpg'/>
-                </div>
-                <div class="modal fade modal-dialog modal-dialog-scrollable" id='facilities'>
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <h5 class="modal-title" id="staticBackdropLabel">Facilities Maintenance and Management</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                              <span aria-hidden="true">&times;</span>
-                            </button>
-                          </div>
-                          <div class="modal-body">
-                            <article>
-                                <h2>Facilities Maintenance <span>&</span> Management</h2>
-                                <p>
-                                    J-Dos provides complete facilities management services in order to ensure the efficient, safe and environmentally responsible operations and maintenance of our clients’ land, buildings, infrastructure and equipment with the goal of long-term preservation of asset values.
-                                </p>
-
-                                <p>
-                                    We support each of these areas with a strong engineering and management background and pride ourselves in our ability to finish every task and project exceeding our client’s expectations, on time and within budget. Our professional staff possesses a wealth of highly specialized skills and knowledge which enable us to assist our clients in solving difficult technical management problems. We combine this knowledge with strong project management skills to plan, implement, control and monitor all projects using stringent quality assurance methodologies designed to ensure a completed project that gains praise from the owners.
-                                </p>
-                            </article>
-                          </div>
-                          <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Understood</button>
-                          </div>
-                        </div>
-                      </div>
-                </div>
+                                    <p>
+                                        Our engineers maintain active professional licenses in the District of Columbia, Maryland, North Carolina, New York, Texas, and Virginia. Our construction inspectors possess the required certifications recognized by multiple State and Local agencies.
+                                    </p>
+                                  </article>
     
-                <div data-toggle="modal" data-target="#progamProject">
-                    <h3>Program and Project Management</h3>
-                    <img src='../img/services/firestation-1-300x220.jpg'/>
-                </div>
-                <div class="modal fade modal-dialog modal-dialog-scrollable" id='progamProject'>
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <h5 class="modal-title" id="staticBackdropLabel">Program and Project Management</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                              <span aria-hidden="true">&times;</span>
-                            </button>
-                          </div>
-                          <div class="modal-body">
-                            <article>
-                                <h2>Program and Project Management</h2>
-                                <p>
-                                    J-Dos has the multi-disciplined expertise to offer a wide range of management skills which can be utilized on a variety of projects. Our staff utilizes advance technology and industry standards to control and direct all phases of a project from inception to completion.  These include value engineering, computer based management tools, CPM and PERT scheduling, cost control, CAD, and BIM. We have a core professional staff of engineers, schedulers, cost estimators, planners, technicians, and support staff experienced in all phases of planning, design, construction and operation of transportation facilities.
-                                </p>
-                            </article>
-
-                            <article>
-                                <h2>Experience Matters</h2>
-                                <p>
-                                    J-Dos’ team of professionals include project support personnel, project accountants, project schedulers, and strategic planners.  We are able to advise our clients on difficult and complex resource allocation situations, and redefine, develop, or implement processes and procedures for planning and delivering projects.  Several of our professional staff have either worked for the various government agencies providing oversight of professional services and construction management firms.
-                                </p>
-
-                                <h3>DCPS Libraries</h3>
-
-                                <p>
-                                    J-Dos was the prime consultant in the District of Columbia Public School (DCPS) libraries where program management services were provided for the renovation of thirty-three (33) school libraries. Our program management services included planning, scheduling, construction coordination, and monitoring of all construction activities.
-                                </p>
-
-                                <h3>Anacostia Waterfront Initiative (AWI)</h3>
-
-                                <p>
-                                    J-Dos provided contract administration and administrative support services on the DDOT Anacostia Waterfront Initiative (AWI) Program Management Team.
-                                </p>
-
-                                <h3>DC Water Clean Rivers Program</h3>
-
-                                <p>
-                                    Over the past 17 years, J-Dos has provided various support services for the DC Water Clean Rivers Program and its predecessor program the DC Water Long Term Control Plan (LTCP). The services provided for these programs included contract administration, civil and geotechnical engineering, and construction management services.
-                                </p>
-                            </article>
-
-                            <article>
-                                <p>
-                                    Our Program Management professionals possess the skills necessary to coordinate with external stakeholders, partners, consultants, and private entities.  J-Dos regularly does business with other District, Federal, and regional agencies and is always ready to assist in developing and acquiring memoranda of understanding or agreements.
-                                </p>
-
-                                <p>
-                                    Our specialized experience for Program Management is a result of doing business in the District over the past two decades.  During this time, J-Dos has participated on several program management teams serving in nearly every program management role.
-                                </p>
-                            </article>
-
-                          </div>
-                          <div class="modal-footer">
+                                  <article class='outset'>
+                                    <p>
+                                        Each Project Team consists of the most capable and experienced individuals reporting to the Construction Manager who is responsible to the client’s management representative on the project.  Staff members of the J-Dos team have managed and inspected design and construction projects exceeding <span>$1 billion</span>.  The experience of our construction management staff includes the full gamut of pavement restoration, roadway reconstruction, streetscaping, and bridge rehabilitation projects. Our professionals have managed and inspected projects ranging from minor improvements projects to complex infrastructure development programs.
+    
+    
+                                    </p>
+                                  </article>
+                            </div>
+                            <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Understood</button>
-                          </div>
+                            </div>
                         </div>
-                      </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class='service'>
+                    <!-- Button trigger modal -->
+                    <div class='service-access' data-toggle="modal" data-target="#engineering">
+                        <h3>Engineering Admin Support Services</h3>
+                        <img src='../img/services/JDos-Cape-05-2014--300x200.jpg'/>
+                    </div>
+                    
+                    <!-- Modal -->
+                    <div class="modal fade" id="engineering" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Engineering Admin Support Services</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                </div>
+                                <div class="modal-body">
+                                    <h2>Engineering Admin Support Services</h2>
+                                    <p>
+                                        J-Dos offers a range of administration support services, all tailored to meet the needs of each client and goal. Whether we are designing comprehensive program schemes or providing interim support, J-Dos works diligently as an integrated team to deliver projects on time and within budget. We combine the knowledge and skills of our staff with strong and innovative project management leadership in order to plan, implement, control and monitor all projects. Our rigorous quality assurance methodologies are developed to ensure our services are complete and consistent without clients’ goals.
+                                    </p>
+                                </article>
+
+                                <article>
+                                    <h2>What We Offer</h2>
+                                    <p>
+                                        J-Dos offers solutions for short and long-term project support challenges. These services include public outreach, data collection and processing, and administrative assistance. By offering these services, our clients and able to focus on their core competencies and maximize productivity.
+                                    </p>
+                                </article>
+
+                                <article class='outset'>
+                                    <p>
+                                        J-Dos was a member of the Project Management (PM) Team responsible for management of the design and construction of a new Frederick Douglas Memorial Bridge, a new interchange at Suitland Parkway/ 1-295, reconstruction of the corridor, a new South Capitol St/ M Street intersection and other related work.
+                                    </p>
+                                </article>
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class='service'>
+                    <!-- Button trigger modal -->
+                    <div class='service-access' data-toggle="modal" data-target="#facilities">
+                        <h3>Facilities Maintenance <span style="font-family: 'MuseoModerno', cursive !important; font-size: 1.5em;">&</span
+                            > Management</h3>
+                        <img src='../img/services/facilities-3-300x220.jpg'/>
+                    </div>
+                    
+                    <!-- Modal -->
+                    <div class="modal fade" id="facilities" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Facilities Maintenance <span style="font-family: 'MuseoModerno', cursive !important; font-size: 1.5em;">&</span
+                > Management</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            </div>
+                            <div class="modal-body">
+                                <article>
+                                    <h2 class='special'>Facilities Maintenance <span style="font-family: 'MuseoModerno', cursive !important; font-size: 1.5em;">&</span
+                                        >Management</h2>
+                                    <p>
+                                        J-Dos provides complete facilities management services in order to ensure the efficient, safe and environmentally responsible operations and maintenance of our clients’ land, buildings, infrastructure and equipment with the goal of long-term preservation of asset values.
+                                    </p>
+    
+                                    <div class='outset'>
+                                        <p>
+                                            We support each of these areas with a strong engineering and management background and pride ourselves in our ability to finish every task and project exceeding our client’s expectations, on time and within budget. Our professional staff possesses a wealth of highly specialized skills and knowledge which enable us to assist our clients in solving difficult technical management problems. We combine this knowledge with strong project management skills to plan, implement, control and monitor all projects using stringent quality assurance methodologies designed to ensure a completed project that gains praise from the owners.
+                                        </p>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class='service'>
+                    <!-- Button trigger modal -->
+                    <div class='service-access' data-toggle="modal" data-target="#progamProject">
+                        <h3>Program <span style="font-family: 'MuseoModerno', cursive !important; font-size: 1.5em;">&</span
+                            > Project Management</h3>
+                        <img src='../img/services/firestation-1-300x220.jpg'/>
+                    </div>
+                    
+                    <!-- Modal -->
+                    <div class="modal fade" id="progamProject" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Program and Project Management</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            </div>
+                            <div class="modal-body">
+                                <article>
+                                    <h2 class='special'>Program <span style="font-family: 'MuseoModerno', cursive !important; font-size: 1.5em;">&</span
+                                        > Project Management</h2>
+                                    <p>
+                                        J-Dos has the multi-disciplined expertise to offer a wide range of management skills which can be utilized on a variety of projects. Our staff utilizes advance technology and industry standards to control and direct all phases of a project from inception to completion.  These include value engineering, computer based management tools, CPM and PERT scheduling, cost control, CAD, and BIM. We have a core professional staff of engineers, schedulers, cost estimators, planners, technicians, and support staff experienced in all phases of planning, design, construction and operation of transportation facilities.
+                                    </p>
+                                </article>
+    
+                                <article>
+                                    <h2>Experience Matters</h2>
+                                    <p>
+                                        J-Dos’ team of professionals include project support personnel, project accountants, project schedulers, and strategic planners.  We are able to advise our clients on difficult and complex resource allocation situations, and redefine, develop, or implement processes and procedures for planning and delivering projects.  Several of our professional staff have either worked for the various government agencies providing oversight of professional services and construction management firms.
+                                    </p>
+    
+                                    <h3>DCPS Libraries</h3>
+    
+                                    <p>
+                                        J-Dos was the prime consultant in the District of Columbia Public School (DCPS) libraries where program management services were provided for the renovation of thirty-three (33) school libraries. Our program management services included planning, scheduling, construction coordination, and monitoring of all construction activities.
+                                    </p>
+    
+                                    <h3>Anacostia Waterfront Initiative (AWI)</h3>
+    
+                                    <p>
+                                        J-Dos provided contract administration and administrative support services on the DDOT Anacostia Waterfront Initiative (AWI) Program Management Team.
+                                    </p>
+    
+                                    <h3>DC Water Clean Rivers Program</h3>
+    
+                                    <p>
+                                        Over the past 17 years, J-Dos has provided various support services for the DC Water Clean Rivers Program and its predecessor program the DC Water Long Term Control Plan (LTCP). The services provided for these programs included contract administration, civil and geotechnical engineering, and construction management services.
+                                    </p>
+                                </article>
+    
+                                <article>
+                                    <p>
+                                        Our Program Management professionals possess the skills necessary to coordinate with external stakeholders, partners, consultants, and private entities.  J-Dos regularly does business with other District, Federal, and regional agencies and is always ready to assist in developing and acquiring memoranda of understanding or agreements.
+                                    </p>
+    
+                                    <p>
+                                        Our specialized experience for Program Management is a result of doing business in the District over the past two decades.  During this time, J-Dos has participated on several program management teams serving in nearly every program management role.
+                                    </p>
+                                </article>
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

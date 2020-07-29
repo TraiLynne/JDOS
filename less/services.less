@@ -1,0 +1,187 @@
+#services {
+    main {
+        max-width: 1200px;
+        margin: 0 auto;
+        .flexBox(row, nowrap, space-between, center);
+        line-height: 1.5em;
+
+        aside {
+            display: none;
+            width: 25%;
+            border-right: 1px solid @mediumFontColor;
+
+            text-align: right;
+            // margin-top: 50px;
+
+            #sub-nav {
+                border-bottom: 1px solid @mediumFontColor;
+                padding-bottom: 20px;
+                
+                p {
+                    cursor: pointer;
+                    padding-right: 10px;
+
+                    &:hover {
+                        color: gold;
+                    }
+                }
+            }
+
+            #info {
+                border-bottom: 1px solid @mediumFontColor;
+                padding-bottom: 20px;
+                p {
+                    padding-right: 10px;
+                }
+            }
+
+            #map {
+                .flexBox(column, nowrap, space-around, flex-end);
+                iframe {
+                    width: 250px;
+                    height: 250px;
+                    margin-top: 10px;
+                    margin-right: 10px;
+                    align-self: flex-end;
+                }
+            }
+
+            h3 {
+                font-size: 1.3em;
+                text-transform: uppercase;
+                padding: 10px;
+                border-bottom: 1px solid @mediumFontColor;
+                display: block;
+            }
+
+            p {
+                margin-top: 20px;
+                padding-right: 20px;
+                span {
+                    font-size: 1.25em;
+                    font-weight: bold;
+                }
+            }
+            
+            @media @tablet {
+                display: initial;
+            }
+        }
+
+        section {
+            width: 94%;
+            margin: 0 auto;
+            text-align: center;
+
+            @media @tablet {
+                width: 70%;
+            }
+
+            h2 {
+                font-size: 1.5em;
+                text-transform: uppercase;
+                text-align: center;
+                padding: 20px;
+
+                @media @tablet {
+                    font-size: 2em;
+                }
+            }
+
+            p {
+                color: @mediumFontColor;
+            }
+
+        #service-container {
+            .flexBox(column, nowrap, space-around, center);
+            width: 94%;
+            margin: 50px auto;
+
+            @media @tablet {
+                .flexBox(row, wrap, space-around, center);
+            }
+
+            .service {
+                width: 100%;
+                margin-bottom: 20px;
+
+                &:hover {
+                    h3 {
+                        color: gold;
+                    }
+                }
+
+                @media @tablet {
+                    width: 45%;
+                }
+
+                .service-access {
+                    h3 {
+                        font-size: 1.25em;
+                        text-align: left;
+                        margin-bottom: 10px;
+                        padding: 10px;
+                        text-transform: center;
+                        height: 75px;
+
+
+                        @media @tablet {
+                            font-size: 1.25em;
+                        }
+                    }
+                }
+
+                .modal {
+                    text-align: left;
+
+                    .modal-content {
+                        .modal-header {
+                            background-color: @blueBackground;
+                            color: @lightFontColor;
+
+                            button {
+                                color: @lightFontColor;
+                            }
+                        }
+
+                        .modal-body {
+                            article {
+                                h2 {
+                                    line-height: 1.5em;
+                                }
+
+                                p {
+                                    margin: 10px 0;
+                                }
+                                
+                                .special {
+                                    line-height: 2em;
+                                }
+                            }
+
+                            article.outset {
+                                border: 1px solid @blueBackground;
+                                background-color: @mediumFontColor;
+                                width: 94%; 
+                                margin: 20px auto;
+                                p{
+                                    color: black;
+
+                                    span {
+                                        font-weight: bold;
+                                        color: gold;
+                                    }
+                                }
+                            }
+                        }
+
+                        .modal-footer {
+                            background-color: @blueBackground
+                        }
+                    }
+                }
+            }
+        }
+        }
+    }
+}
