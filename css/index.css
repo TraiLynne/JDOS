@@ -474,21 +474,43 @@ header nav .navbar-brand img {
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: nowrap;
   justify-content: space-between;
   align-content: center;
   line-height: 1.5em;
 }
+@media (min-width: 500px) {
+  #services main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: center;
+  }
+}
 #services main aside {
-  display: none;
-  width: 25%;
+  order: 1;
+  width: 100%;
   border-right: 1px solid #b0b0b0;
   text-align: right;
 }
+@media (min-width: 500px) {
+  #services main aside {
+    width: 25%;
+    order: 0;
+  }
+}
 #services main aside #sub-nav {
   border-bottom: 1px solid #b0b0b0;
+  margin-bottom: 20px;
   padding-bottom: 20px;
+  display: none;
+}
+@media (min-width: 500px) {
+  #services main aside #sub-nav {
+    display: initial;
+  }
 }
 #services main aside #sub-nav p {
   cursor: pointer;
@@ -498,25 +520,54 @@ header nav .navbar-brand img {
   color: gold;
 }
 #services main aside #info {
+  border-top: 1px solid #b0b0b0;
   border-bottom: 1px solid #b0b0b0;
   padding-bottom: 20px;
+  display: none;
+}
+@media (min-width: 500px) {
+  #services main aside #info {
+    display: initial;
+  }
 }
 #services main aside #info p {
   padding-right: 10px;
 }
+#services main aside #info a {
+  color: gold;
+}
 #services main aside #map {
+  border-top: 1px solid #b0b0b0;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: space-around;
-  align-content: flex-end;
+  align-content: center;
+}
+#services main aside #map h3 {
+  text-align: center;
+}
+@media (min-width: 500px) {
+  #services main aside #map h3 {
+    text-align: right;
+  }
+}
+@media (min-width: 500px) {
+  #services main aside #map {
+    align-content: flex-end;
+  }
 }
 #services main aside #map iframe {
   width: 250px;
   height: 250px;
-  margin-top: 10px;
-  margin-right: 10px;
-  align-self: flex-end;
+  margin: 20px 0;
+  align-self: center;
+}
+@media (min-width: 500px) {
+  #services main aside #map iframe {
+    align-self: flex-end;
+    margin-right: 10px;
+  }
 }
 #services main aside h3 {
   font-size: 1.3em;
@@ -539,6 +590,7 @@ header nav .navbar-brand img {
   }
 }
 #services main section {
+  order: 0;
   width: 94%;
   margin: 0 auto;
   text-align: center;
@@ -546,6 +598,7 @@ header nav .navbar-brand img {
 @media (min-width: 500px) {
   #services main section {
     width: 70%;
+    order: 1;
   }
 }
 #services main section h2 {
@@ -639,6 +692,12 @@ header nav .navbar-brand img {
 }
 #services main section #service-container .service .modal .modal-content .modal-footer {
   background-color: #0a2a45;
+}
+#career #map {
+  width: 100%;
+}
+#career #map iframe#g-map {
+  height: 50vh;
 }
 #career main {
   max-width: 1200px;

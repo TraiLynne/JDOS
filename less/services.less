@@ -2,20 +2,35 @@
     main {
         max-width: 1200px;
         margin: 0 auto;
-        .flexBox(row, nowrap, space-between, center);
+        .flexBox(column, nowrap, space-between, center);
         line-height: 1.5em;
 
+        @media @tablet {
+            .flexBox(row, nowrap, space-between, center);
+        }
+
         aside {
-            display: none;
-            width: 25%;
+            order: 1;
+            width: 100%;
             border-right: 1px solid @mediumFontColor;
 
             text-align: right;
             // margin-top: 50px;
 
+            @media @tablet {
+                width: 25%;
+                order: 0;
+            }
+
             #sub-nav {
                 border-bottom: 1px solid @mediumFontColor;
+                margin-bottom: 20px;
                 padding-bottom: 20px;
+                display: none;
+
+                @media @tablet {
+                    display: initial;
+                }
                 
                 p {
                     cursor: pointer;
@@ -28,21 +43,49 @@
             }
 
             #info {
+                border-top: 1px solid @mediumFontColor;
                 border-bottom: 1px solid @mediumFontColor;
                 padding-bottom: 20px;
+                display: none;
+
+                @media @tablet {
+                    display: initial;
+                }
+
                 p {
                     padding-right: 10px;
+                }
+
+                a {
+                    color: gold;
                 }
             }
 
             #map {
-                .flexBox(column, nowrap, space-around, flex-end);
+                border-top: 1px solid @mediumFontColor;
+                .flexBox(column, nowrap, space-around, center);
+
+                h3 {
+                    text-align: center;
+
+                    @media @tablet {
+                        text-align: right;
+                    }
+                }
+
+                @media @tablet {
+                    align-content: flex-end;
+                }
                 iframe {
                     width: 250px;
                     height: 250px;
-                    margin-top: 10px;
-                    margin-right: 10px;
-                    align-self: flex-end;
+                    margin: 20px 0;
+                    align-self: center;
+
+                    @media @tablet {
+                        align-self: flex-end;
+                        margin-right: 10px;
+                    }
                 }
             }
 
@@ -69,12 +112,14 @@
         }
 
         section {
+            order: 0;
             width: 94%;
             margin: 0 auto;
             text-align: center;
 
             @media @tablet {
                 width: 70%;
+                order: 1;
             }
 
             h2 {
