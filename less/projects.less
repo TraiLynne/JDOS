@@ -1,0 +1,99 @@
+#projects {
+
+    main {
+        max-width: 1200px;
+        margin: 0 auto;
+        min-height: 100vh - 30px;
+
+        h1 {
+            font-size: 1.5em;
+                text-transform: uppercase;
+                text-align: center;
+                padding: 20px;
+
+                @media @tablet {
+                    font-size: 2em;
+                }
+        }
+
+        .accordion {
+            width: 96%;
+            margin: 0 auto;
+
+            .card {
+                width: 100%;
+
+                .card-header {
+                    height: 50px;
+                    background-color: #0a2a45; 
+                    color: white;
+                }
+
+                .collapse {
+                    .card-body {
+                        article {
+                            width: 96%;
+                            margin: 0 auto;
+                            padding: 10px 0;
+                            .flexBox(column, nowrap, space-around, center);
+
+                            @media @tablet {
+                                .flexBox(row, nowrap, space-between, center)
+                            }
+
+                            img {
+                                width: 100%;
+                                height: auto;
+
+                                @media @tablet {
+                                    width: 45%;
+                                }
+                            }
+
+                            .textBox {
+                                line-height: 1.5em;
+
+                                @media @tablet {
+                                    width: 45%;
+                                }
+
+                                h3 {
+                                    font-size: 1.25em;
+                                    text-transform: uppercase;
+                                    text-align: center;
+                                    padding: 20px;
+
+                                    @media @tablet {
+                                        font-size: 1.5em;
+                                    }
+                                }
+
+                                p {
+                                    padding: 5px 0;
+                                }
+
+                                h4 {
+                                    font-weight: bold;
+                                }
+                            }
+                        }
+
+                        article.second{
+                            img {
+                                @media @tablet {
+                                    order: 1;
+                                }
+                            }
+                            .textBox {
+                                @media @tablet {
+                                    order: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
