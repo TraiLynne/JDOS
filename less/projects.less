@@ -41,12 +41,14 @@
                                 .flexBox(row, nowrap, space-between, center)
                             }
 
-                            img {
+                            div {
                                 width: 100%;
                                 height: auto;
+                                .flexBox(column, nowrap, center, center);
 
                                 @media @tablet {
                                     width: 45%;
+                                    height: auto;
                                 }
                             }
 
@@ -79,7 +81,7 @@
                         }
 
                         article.second{
-                            img {
+                            div {
                                 @media @tablet {
                                     order: 1;
                                 }

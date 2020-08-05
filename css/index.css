@@ -121,6 +121,10 @@ table {
 }
 body {
   font-family: 'Lato', sans-serif;
+  max-width: 1920px;
+}
+body li {
+  text-transform: capitalize;
 }
 body main {
   margin: 0 auto;
@@ -135,11 +139,6 @@ header nav {
   justify-content: space-between;
   max-width: 1200px;
   margin: 0 auto;
-}
-@media (min-width: 500px) {
-  header nav {
-    flex-direction: column;
-  }
 }
 header nav .navbar-brand img {
   max-width: 175px;
@@ -232,38 +231,155 @@ header nav .navbar-brand img {
   #home main #services #service-container {
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
   }
 }
-#home main #services #service-container .card {
-  width: 100%;
-  margin: 20px 0;
+#home main #services #service-container div {
+  width: 300px;
+  height: 300px;
+  margin: 5px auto;
+  background-color: #0a2a45;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: center;
 }
-#home main #services #service-container .card:hover {
-  background-color: black;
+#home main #services #service-container div:hover {
+  background-color: transparent;
+  color: black;
 }
 @media (min-width: 500px) {
-  #home main #services #service-container .card {
-    width: 45%;
-    margin: 20px;
+  #home main #services #service-container div {
+    margin: 5px;
   }
 }
-#home main #services #service-container .card .card-img {
-  height: 100%;
+#home main #services #service-container div i {
+  font-size: 5em;
+  align-self: center;
+  margin: 20px;
+  color: gold;
 }
-#home main #services #service-container .card .card-img:hover {
-  display: contents;
+#home main #services #service-container div h5 {
+  align-self: center;
+  font-size: 2em;
 }
-#home main #services #service-container .card .card-img-overlay {
+#home main #services #service-container div#construction:hover {
+  background-image: url('../img/services/ConstructionManagement.jpg');
+  background-position: center;
+  background-size: cover;
+  font-weight: bold;
+}
+#home main #services #service-container div#facilities:hover {
+  background-image: url('../img/services/facilities-3-300x220.jpg');
+  background-position: center;
+  background-size: cover;
+  color: white;
+}
+#home main #projects {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 25px 0;
+}
+#home main #projects h2 {
+  font-size: 1.5em;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 20px;
+}
+@media (min-width: 500px) {
+  #home main #projects h2 {
+    font-size: 2em;
+  }
+}
+#home main #projects p {
+  color: #b0b0b0;
+  padding-bottom: 20px;
+  text-align: center;
+}
+#home main #projects .accordion {
+  width: 96%;
+  margin: 0 auto;
+}
+#home main #projects .accordion .card {
+  width: 100%;
+}
+#home main #projects .accordion .card .card-header {
+  height: 50px;
+  background-color: #0a2a45;
+  color: white;
+}
+#home main #projects .accordion .card .collapse .card-body article {
+  width: 96%;
+  margin: 0 auto;
+  padding: 10px 0;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: nowrap;
   justify-content: space-around;
   align-content: center;
 }
-#home main #services #service-container .card .card-img-overlay h5 {
-  align-self: center;
-  font-size: 1.5em;
+@media (min-width: 500px) {
+  #home main #projects .accordion .card .collapse .card-body article {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: center;
+  }
+}
+#home main #projects .accordion .card .collapse .card-body article div {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: center;
+}
+@media (min-width: 500px) {
+  #home main #projects .accordion .card .collapse .card-body article div {
+    width: 45%;
+    height: auto;
+  }
+}
+#home main #projects .accordion .card .collapse .card-body article .textBox {
+  line-height: 1.5em;
+}
+@media (min-width: 500px) {
+  #home main #projects .accordion .card .collapse .card-body article .textBox {
+    width: 45%;
+  }
+}
+#home main #projects .accordion .card .collapse .card-body article .textBox h3 {
+  font-size: 1.25em;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 20px;
+}
+@media (min-width: 500px) {
+  #home main #projects .accordion .card .collapse .card-body article .textBox h3 {
+    font-size: 1.5em;
+  }
+}
+#home main #projects .accordion .card .collapse .card-body article .textBox p {
+  padding: 5px 0;
+}
+#home main #projects .accordion .card .collapse .card-body article .textBox h4 {
   font-weight: bold;
+}
+@media (min-width: 500px) {
+  #home main #projects .accordion .card .collapse .card-body article.second div {
+    order: 1;
+  }
+}
+@media (min-width: 500px) {
+  #home main #projects .accordion .card .collapse .card-body article.second .textBox {
+    order: 0;
+  }
 }
 #home main #partners {
   max-width: 1200px;
@@ -337,11 +453,11 @@ header nav .navbar-brand img {
   order: 0;
   padding-top: 20px;
 }
-@media (min-width: 500px) {
+@media (min-width: 800px) {
   #about main article#history {
     order: 0;
     width: 65%;
-    margin: 0;
+    margin: 0 auto;
   }
 }
 #about main article#history h2 {
@@ -367,7 +483,7 @@ header nav .navbar-brand img {
   order: 1;
   padding-top: 20px;
 }
-@media (min-width: 500px) {
+@media (min-width: 800px) {
   #about main article#values {
     order: 2;
   }
@@ -397,12 +513,29 @@ header nav .navbar-brand img {
 }
 @media (min-width: 500px) {
   #about main aside {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-content: center;
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 800px) {
+  #about main aside {
     order: 1;
     width: 25%;
+    flex-direction: column;
   }
 }
 #about main aside a {
   padding: 20px;
+}
+@media (min-width: 500px) {
+  #about main aside a {
+    height: 200px;
+    width: 300px;
+  }
 }
 #about main aside a .card {
   width: 100%;
@@ -433,7 +566,7 @@ header nav .navbar-brand img {
   order: 3;
   padding-top: 20px;
 }
-@media (min-width: 500px) {
+@media (min-width: 800px) {
   #about main #partners {
     order: 3;
   }
@@ -740,13 +873,19 @@ header nav .navbar-brand img {
     align-content: center;
   }
 }
-#projects main .accordion .card .collapse .card-body article img {
+#projects main .accordion .card .collapse .card-body article div {
   width: 100%;
   height: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: center;
 }
 @media (min-width: 500px) {
-  #projects main .accordion .card .collapse .card-body article img {
+  #projects main .accordion .card .collapse .card-body article div {
     width: 45%;
+    height: auto;
   }
 }
 #projects main .accordion .card .collapse .card-body article .textBox {
@@ -775,7 +914,7 @@ header nav .navbar-brand img {
   font-weight: bold;
 }
 @media (min-width: 500px) {
-  #projects main .accordion .card .collapse .card-body article.second img {
+  #projects main .accordion .card .collapse .card-body article.second div {
     order: 1;
   }
 }
@@ -945,7 +1084,7 @@ footer {
 footer .footer-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 50px 0;
+  padding: 50px 20px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -963,7 +1102,7 @@ footer .footer-container div {
 }
 @media (min-width: 500px) {
   footer .footer-container div {
-    width: 20%;
+    width: 23%;
   }
 }
 footer .footer-container div h3 {
@@ -973,4 +1112,20 @@ footer .footer-container div h3 {
 }
 footer .footer-container div p {
   line-height: 1.5em;
+}
+footer .footer-container #foot-projects div.pro-contain {
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-content: center;
+  width: 100%;
+}
+footer .footer-container #foot-projects div.pro-contain div {
+  width: 30%;
+  align-self: center;
+}
+footer .footer-container #foot-projects div.pro-contain p {
+  width: 65%;
 }

@@ -78,36 +78,200 @@
                 @media @tablet {
                     flex-direction: row;
                     flex-wrap: wrap;
+                    justify-content: space-around;
+                    align-items: center;
                 }
 
-                .card {
-                    width: 100%;
-                    margin: 20px 0;
+                div {
+                    // width: 100%;
+                    width: 300px;
+                    height: 300px;
+                    margin: 5px auto;
+                    background-color: @blueBackground;
+                    color: white;
+                    
+                    text-align: center;
+
+                    .flexBox(column, nowrap, center, center);
 
                     &:hover {
-                        background-color: black;
+                        background-color: transparent;
+                        color: black;
                     }
 
                     @media @tablet {
-                        width: 45%;
+                        // width: 30%;
+                        margin: 5px;
+                    }
+
+                    
+
+                    i {
+                        font-size: 5em;
+                        align-self: center;
                         margin: 20px;
+                        color: gold;
                     }
 
-                    .card-img {
-                        height: 100%;
-
-                        &:hover {
-                            display: contents;
-                          }
+                    h5 {
+                        // color: white;
+                        align-self: center;
+                        font-size: 2em;
                     }
+                }
 
-                    .card-img-overlay {
-                        .flexBox(row, nowrap, space-around, center);
+                div#construction {
+                    &:hover {
+                        background-image: url('../img/services/ConstructionManagement.jpg');
+                        background-position: center;
+                        background-size: cover;
+                        font-weight: bold;
+                    }
+                }
 
-                        h5 {
-                            align-self: center;
-                            font-size: 1.5em;
-                            font-weight: bold;
+                div#facilities {
+                    
+                    &:hover {
+                        background-image: url('../img/services/facilities-3-300x220.jpg');
+                        background-position: center;
+                        background-size: cover;
+                        color: white;
+                }
+                } 
+                    
+
+                // .card {
+                //     width: 100%;
+                //     margin: 20px 0;
+
+                //     &:hover {
+                //         background-color: black;
+                //     }
+
+                //     @media @tablet {
+                //         width: 45%;
+                //         margin: 20px;
+                //     }
+
+                //     .card-img {
+                //         height: 100%;
+
+                //         &:hover {
+                //             display: contents;
+                //           }
+                //     }
+
+                //     .card-img-overlay {
+                //         .flexBox(row, nowrap, space-around, center);
+
+                //         h5 {
+                //             align-self: center;
+                //             font-size: 1.5em;
+                //             font-weight: bold;
+                //         }
+                //     }
+                // }
+            }
+        }
+
+        #projects {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 25px 0;
+
+            h2 {
+                font-size: 1.5em;
+                text-transform: uppercase;
+                text-align: center;
+                padding: 20px;
+
+                @media @tablet {
+                    font-size: 2em;
+                }
+            }
+
+            p {
+                color: @mediumFontColor;
+                padding-bottom: 20px;
+                text-align: center;
+            }
+
+            .accordion {
+                width: 96%;
+                margin: 0 auto;
+    
+                .card {
+                    width: 100%;
+    
+                    .card-header {
+                        height: 50px;
+                        background-color: #0a2a45; 
+                        color: white;
+                    }
+    
+                    .collapse {
+                        .card-body {
+                            article {
+                                width: 96%;
+                                margin: 0 auto;
+                                padding: 10px 0;
+                                .flexBox(column, nowrap, space-around, center);
+    
+                                @media @tablet {
+                                    .flexBox(row, nowrap, space-between, center)
+                                }
+    
+                                div {
+                                    width: 100%;
+                                    height: auto;
+                                    .flexBox(column, nowrap, center, center);
+    
+                                    @media @tablet {
+                                        width: 45%;
+                                        height: auto;
+                                    }
+                                }
+    
+                                .textBox {
+                                    line-height: 1.5em;
+    
+                                    @media @tablet {
+                                        width: 45%;
+                                    }
+    
+                                    h3 {
+                                        font-size: 1.25em;
+                                        text-transform: uppercase;
+                                        text-align: center;
+                                        padding: 20px;
+    
+                                        @media @tablet {
+                                            font-size: 1.5em;
+                                        }
+                                    }
+    
+                                    p {
+                                        padding: 5px 0;
+                                    }
+    
+                                    h4 {
+                                        font-weight: bold;
+                                    }
+                                }
+                            }
+    
+                            article.second{
+                                div {
+                                    @media @tablet {
+                                        order: 1;
+                                    }
+                                }
+                                .textBox {
+                                    @media @tablet {
+                                        order: 0;
+                                    }
+                                }
+                            }
                         }
                     }
                 }
