@@ -696,12 +696,12 @@ header nav .navbar-brand img {
   }
 }
 #services main aside #map iframe {
-  width: 250px;
-  height: 250px;
+  width: 94%;
+  height: auto;
   margin: 20px 0;
   align-self: center;
 }
-@media (min-width: 500px) {
+@media (min-width: 800px) {
   #services main aside #map iframe {
     align-self: flex-end;
     margin-right: 10px;
