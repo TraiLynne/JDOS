@@ -43,6 +43,7 @@
     main {
         width: 100%;
         background-color: white;
+        line-height: 1.5em;
 
         #services {
             max-width: 1200px;
@@ -130,24 +131,6 @@
                     }
                 }
 
-                div#construction {
-                    &:hover {
-                        background-image: url('../img/services/ConstructionManagement.jpg');
-                        background-position: center;
-                        background-size: cover;
-                        font-weight: bold;
-                    }
-                }
-
-                div#facilities {
-                    
-                    &:hover {
-                        background-image: url('../img/services/facilities-3-300x220.jpg');
-                        background-position: center;
-                        background-size: cover;
-                        color: white;
-                }
-                } 
                     
 
                 // .card {
@@ -262,6 +245,7 @@
     
                                     p {
                                         padding: 5px 0;
+                                        text-align: left;
                                     }
     
                                     h4 {
@@ -284,6 +268,16 @@
                             }
                         }
                     }
+                }
+            }
+
+            button {
+                display: flex;
+                align-self: center;
+                margin: 20px auto;
+
+                a {
+                    color: white;
                 }
             }
         }

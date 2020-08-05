@@ -193,6 +193,7 @@ header nav .navbar-brand img {
 #home main {
   width: 100%;
   background-color: white;
+  line-height: 1.5em;
 }
 #home main #services {
   max-width: 1200px;
@@ -280,18 +281,6 @@ header nav .navbar-brand img {
 #home main #services #service-container div a:hover {
   color: black;
   text-decoration: none;
-}
-#home main #services #service-container div#construction:hover {
-  background-image: url('../img/services/ConstructionManagement.jpg');
-  background-position: center;
-  background-size: cover;
-  font-weight: bold;
-}
-#home main #services #service-container div#facilities:hover {
-  background-image: url('../img/services/facilities-3-300x220.jpg');
-  background-position: center;
-  background-size: cover;
-  color: white;
 }
 #home main #projects {
   max-width: 1200px;
@@ -381,6 +370,7 @@ header nav .navbar-brand img {
 }
 #home main #projects .accordion .card .collapse .card-body article .textBox p {
   padding: 5px 0;
+  text-align: left;
 }
 #home main #projects .accordion .card .collapse .card-body article .textBox h4 {
   font-weight: bold;
@@ -394,6 +384,14 @@ header nav .navbar-brand img {
   #home main #projects .accordion .card .collapse .card-body article.second .textBox {
     order: 0;
   }
+}
+#home main #projects button {
+  display: flex;
+  align-self: center;
+  margin: 20px auto;
+}
+#home main #projects button a {
+  color: white;
 }
 #home main #partners {
   max-width: 1200px;
