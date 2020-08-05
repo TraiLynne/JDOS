@@ -122,6 +122,7 @@ table {
 body {
   font-family: 'Lato', sans-serif;
   max-width: 1920px;
+  margin-top: 119px;
 }
 body li {
   text-transform: capitalize;
@@ -132,6 +133,10 @@ body main {
 header {
   background-color: white;
   border-bottom: 1px solid #b0b0b0;
+  z-index: 99;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 header nav {
   display: flex;
