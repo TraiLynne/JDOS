@@ -273,6 +273,14 @@ header nav .navbar-brand img {
   align-self: center;
   font-size: 2em;
 }
+#home main #services #service-container div a {
+  color: white;
+  text-decoration: none;
+}
+#home main #services #service-container div a:hover {
+  color: black;
+  text-decoration: none;
+}
 #home main #services #service-container div#construction:hover {
   background-image: url('../img/services/ConstructionManagement.jpg');
   background-position: center;
