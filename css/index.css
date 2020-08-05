@@ -757,7 +757,7 @@ header nav .navbar-brand img {
   width: 94%;
   margin: 50px auto;
 }
-@media (min-width: 500px) {
+@media (min-width: 800px) {
   #services main section #service-container {
     display: flex;
     flex-direction: row;
@@ -768,6 +768,7 @@ header nav .navbar-brand img {
 }
 #services main section #service-container .service {
   width: 100%;
+  margin: 0 auto;
   margin-bottom: 20px;
 }
 #services main section #service-container .service:hover h3 {
@@ -790,6 +791,9 @@ header nav .navbar-brand img {
   #services main section #service-container .service .service-access h3 {
     font-size: 1.25em;
   }
+}
+#services main section #service-container .service .service-access img {
+  width: 100%;
 }
 #services main section #service-container .service .modal {
   text-align: left;

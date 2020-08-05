@@ -142,12 +142,13 @@
             width: 94%;
             margin: 50px auto;
 
-            @media @tablet {
+            @media @desktop {
                 .flexBox(row, wrap, space-around, center);
             }
 
             .service {
                 width: 100%;
+                margin: 0 auto;
                 margin-bottom: 20px;
 
                 &:hover {
@@ -173,6 +174,10 @@
                         @media @tablet {
                             font-size: 1.25em;
                         }
+                    }
+
+                    img {
+                        width: 100%;
                     }
                 }
 
