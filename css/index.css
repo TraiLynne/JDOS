@@ -961,6 +961,22 @@ header nav .navbar-brand img {
   padding-bottom: 20px;
   text-align: center;
 }
+#contact #map {
+  height: 115px;
+}
+#contact #map iframe {
+  height: 100%;
+}
+@media (min-width: 500px) {
+  #contact #map {
+    height: 300px;
+  }
+}
+@media (min-width: 800px) {
+  #contact #map {
+    height: 400px;
+  }
+}
 #contact main {
   max-width: 1200px;
   width: 94%;
