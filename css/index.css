@@ -121,8 +121,9 @@ table {
 }
 body {
   font-family: 'Lato', sans-serif;
-  max-width: 1920px;
   margin-top: 119px;
+  max-width: 1920px;
+  margin: 119px auto 0;
 }
 body li {
   text-transform: capitalize;
