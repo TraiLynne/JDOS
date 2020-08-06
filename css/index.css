@@ -273,6 +273,7 @@ header nav .navbar-brand img {
 #home main #services #service-container div h5 {
   align-self: center;
   font-size: 2em;
+  line-height: 1.5em;
 }
 #home main #services #service-container div a {
   color: white;
