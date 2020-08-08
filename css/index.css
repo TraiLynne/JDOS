@@ -242,7 +242,7 @@ header nav .navbar-brand img {
     align-items: center;
   }
 }
-#home main #services #service-container div {
+#home main #services #service-container .service {
   width: 300px;
   height: 300px;
   margin: 5px auto;
@@ -255,31 +255,73 @@ header nav .navbar-brand img {
   justify-content: center;
   align-content: center;
 }
-#home main #services #service-container div:hover {
+#home main #services #service-container .service:hover {
   background-color: transparent;
   color: black;
 }
 @media (min-width: 500px) {
-  #home main #services #service-container div {
+  #home main #services #service-container .service {
     margin: 5px;
   }
 }
-#home main #services #service-container div i {
+#home main #services #service-container .service i {
   font-size: 5em;
   align-self: center;
   margin: 20px;
   color: gold;
 }
-#home main #services #service-container div h5 {
+#home main #services #service-container .service h5 {
   align-self: center;
   font-size: 2em;
   line-height: 1.5em;
 }
-#home main #services #service-container div a {
+#home main #services #service-container .service a {
   color: white;
   text-decoration: none;
 }
-#home main #services #service-container div a:hover {
+#home main #services #service-container .service a:hover {
+  color: black;
+  text-decoration: none;
+}
+#home main #services #service-container .modal {
+  text-align: left;
+}
+#home main #services #service-container .modal .modal-content .modal-header {
+  background-color: #0a2a45;
+  color: #ebebeb;
+}
+#home main #services #service-container .modal .modal-content .modal-header button {
+  color: #ebebeb;
+}
+#home main #services #service-container .modal .modal-content .modal-body article h2 {
+  line-height: 1.5em;
+}
+#home main #services #service-container .modal .modal-content .modal-body article p {
+  margin: 10px 0;
+}
+#home main #services #service-container .modal .modal-content .modal-body article .special {
+  line-height: 2em;
+}
+#home main #services #service-container .modal .modal-content .modal-body article.outset {
+  border: 1px solid #0a2a45;
+  background-color: #b0b0b0;
+  width: 94%;
+  margin: 20px auto;
+}
+#home main #services #service-container .modal .modal-content .modal-body article.outset p {
+  color: black;
+}
+#home main #services #service-container .modal .modal-content .modal-body article.outset p span {
+  font-weight: bold;
+  color: gold;
+}
+#home main #services #service-container .modal .modal-content .modal-footer {
+  background-color: #0a2a45;
+}
+#home main #services #service-container .modal .modal-content .modal-footer button {
+  color: white;
+}
+#home main #services #service-container .modal .modal-content .modal-footer button a {
   color: black;
   text-decoration: none;
 }
