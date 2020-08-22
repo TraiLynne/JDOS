@@ -298,6 +298,7 @@ header nav .navbar-brand img {
 }
 #home main #services #service-container .modal .modal-content .modal-body article p {
   margin: 10px 0;
+  text-align: left;
 }
 #home main #services #service-container .modal .modal-content .modal-body article .special {
   line-height: 2em;
