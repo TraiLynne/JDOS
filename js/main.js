@@ -4,7 +4,7 @@ $(document).ready(function() {
 
     console.log('READY');
 
-    console.log(currentUrl[currentUrl.length - 1])
+    console.log(currentUrl[currentUrl.length - 1]);
 
     currentUrl[currentUrl.length - 1] === '#construction-management-services' ?
         $('#constructionAccess').trigger('click')
@@ -16,6 +16,13 @@ $(document).ready(function() {
                     $('#programAccess').trigger('click')
                     : currentUrl[currentUrl.length - 1] === '#corporate-services' ?
                         $('#corpAccess').trigger('click')
-                        : console.log('not services');
-
+                        : currentUrl[currentUrl.length - 1] === '#mount-vernon' ?
+                            $('#headingTwo').trigger('click')
+                            :currentUrl[currentUrl.length - 1] === '#glover-street' ?
+                                $('#headingThree').trigger('click')
+                                : currentUrl[currentUrl.length - 1] === '#kalima-culvert-reconstruction' ?
+                                    $('#headingSix').trigger('click')
+                                    :null;
+                            
+    
 });
