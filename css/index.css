@@ -246,9 +246,10 @@ header nav .navbar-brand img {
   width: 300px;
   height: 300px;
   margin: 5px auto;
-  background-color: #0a2a45;
   color: white;
   text-align: center;
+  font-weight: bold;
+  cursor: pointer;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -256,8 +257,7 @@ header nav .navbar-brand img {
   align-content: center;
 }
 #home main #services #service-container .service:hover {
-  background-color: transparent;
-  color: black;
+  color: white;
 }
 @media (min-width: 500px) {
   #home main #services #service-container .service {
@@ -274,14 +274,54 @@ header nav .navbar-brand img {
   align-self: center;
   font-size: 2em;
   line-height: 1.5em;
+  background-color: #0a2a45;
+  opacity: 50%;
+  width: 100%;
+}
+#home main #services #service-container .service h5:hover {
+  opacity: 100%;
 }
 #home main #services #service-container .service a {
   color: white;
   text-decoration: none;
 }
 #home main #services #service-container .service a:hover {
-  color: black;
   text-decoration: none;
+}
+#home main #services #service-container #construction {
+  background-image: url('../img/services/ConstructionManagement.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+#home main #services #service-container #facilities {
+  background-image: url('../img/services/facilities-maint.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+#home main #services #service-container #progProj {
+  background-image: url('../img/services/program_project_manage.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#home main #services #service-container #engineering {
+  background-image: url('../img/services/JDos-Cape-05-2014--300x200.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+#home main #services #service-container #corporate {
+  background-image: url('../img/services/corp-services2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+#home main #services #service-container #contact {
+  background-image: url('../img/services/contact.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 #home main #services #service-container .modal {
   text-align: left;
@@ -863,6 +903,10 @@ header nav .navbar-brand img {
 }
 #services main section #service-container .service .modal .modal-content .modal-body article h2 {
   line-height: 1.5em;
+  color: black;
+}
+#services main section #service-container .service .modal .modal-content .modal-body article h3 {
+  color: black;
 }
 #services main section #service-container .service .modal .modal-content .modal-body article p {
   margin: 10px 0;
@@ -1202,6 +1246,10 @@ footer .footer-container #foot-projects div.pro-contain div {
   width: 30%;
   align-self: center;
 }
-footer .footer-container #foot-projects div.pro-contain p {
+footer .footer-container #foot-projects div.pro-contain a {
   width: 65%;
+  color: white;
+}
+footer .footer-container #foot-projects div.pro-contain a:hover {
+  color: gold;
 }

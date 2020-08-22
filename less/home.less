@@ -88,22 +88,27 @@
                     width: 300px;
                     height: 300px;
                     margin: 5px auto;
-                    background-color: @blueBackground;
+                    // background-color: @blueBackground;
+                    // color: @blueBackground;
                     color: white;
                     
                     text-align: center;
+                    font-weight: bold;
+                    cursor: pointer;
 
                     .flexBox(column, nowrap, center, center);
 
                     &:hover {
-                        background-color: transparent;
-                        color: black;
+                        // background-color: transparent;
+                        color: white;
                     }
 
                     @media @tablet {
                         // width: 30%;
                         margin: 5px;
                     }
+
+                    
 
                     
 
@@ -119,6 +124,13 @@
                         align-self: center;
                         font-size: 2em;
                         line-height: 1.5em;
+                        background-color: @blueBackground;
+                        opacity: 50%;
+                        width: 100%;
+
+                        &:hover {
+                            opacity: 100%;
+                        }
                     }
 
                     a {
@@ -126,10 +138,51 @@
                         text-decoration: none;
 
                         &:hover {
-                            color: black;
+                            // color: black;
                             text-decoration: none;
                         }
                     }
+                }
+
+                #construction {
+                    background-image: url('../img/services/ConstructionManagement.jpg');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;
+                }
+
+                #facilities {
+                    background-image: url('../img/services/facilities-maint.jpg');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;
+                }
+
+                #progProj {
+                    background-image: url('../img/services/program_project_manage.jpg');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+
+                #engineering {
+                    background-image: url('../img/services/JDos-Cape-05-2014--300x200.jpg');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;
+                }
+
+                #corporate {
+                    background-image: url('../img/services/corp-services2.jpg');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;
+                }
+
+                #contact {
+                    background-image: url('../img/services/contact.jpg');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;
                 }
 
                 .modal {
